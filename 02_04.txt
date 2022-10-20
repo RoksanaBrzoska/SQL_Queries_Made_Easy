@@ -1,0 +1,2 @@
+--Merge statement to update or insert rows into dept_copy_tab
+MERGE INTO dept_copy_tab dc USING dept_tab d ON (dc.deptno = d.deptno) WHEN MATCHED THEN UPDATE SET dc.mgr_id=300 WHEN NOT MATCHED THEN INSERT VALUES(d.deptno,d.dname,d.mgr_id,d.location_id);

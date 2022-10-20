@@ -1,0 +1,10 @@
+--Drop a table
+DROP TABLE dept_copy_tab;
+
+--Rename a table
+RENAME states TO states_sales_tab;
+
+
+
+
+

@@ -1,0 +1,10 @@
+--Add a new column in a table
+ALTER TABLE states ADD (test_col VARCHAR2(5)); 
+
+
+--Change datatype or size of a column
+ALTER TABLE states MODIFY (test_col VARCHAR2(20));
+
+
+--Delete a column from a table
+ALTER TABLE states DROP COLUMN test_col;
